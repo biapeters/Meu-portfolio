@@ -1,0 +1,43 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#contato {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h3 {
+    color: #7d27e0;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ccc;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+section#contato h3 {
+    text-decoration: none;
+    margin-top: 40;
+}
+
+section#contato p {
+    margin-bottom: 0;
+}
