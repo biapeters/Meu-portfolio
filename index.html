@@ -20,6 +20,12 @@
             </ul>
         </nav>  
         <header>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+                <span class="icon">🌞</span> <!-- Sol por padrão -->
+            </label>
+
             <div class="center">
                 <img src="./img/Bianca3.png" alt="Foto de Bianca Peters"> 
             </div>
@@ -28,22 +34,21 @@
         </header>
         
         <main>
-            <section>
-                <h3>Sobre mim</h3>
+            <section class="card fade-in">
+                <h3>Quem sou eu</h3>
                 <p>
-                    Olá! Me chamo Bianca, sou estudante de Inteligência Artificial Aplicada e estou sempre em busca de desafios que possam agregar ao meu crescimento profissional. Tenho um grande interesse por tecnologia e inovação, especialmente no desenvolvimento de soluções que possam transformar o mundo de maneira positiva.
+                    Oi! Eu sou a Bianca, apaixonada por tecnologia, curiosa por natureza e gamer nas horas vagas (ou em todas elas 👾).
                 </p>
                 <p> 
-                    Atualmente, estou aprimorando minhas habilidades em Python e lógica computacional, enquanto me preparo para entrar no mercado de trabalho. Meu objetivo é integrar equipes que utilizem IA para resolver problemas complexos e melhorar processos.
+                    Estudo Inteligência Artificial Aplicada e tô sempre buscando transformar ideias malucas em soluções úteis e criativas. Gosto de códigos que fazem sentido, interfaces que funcionam de verdade e projetos que têm alma.
                 </p>
                 <p>
-                    Além disso, acredito na importância de um ambiente de trabalho colaborativo, onde a diversidade de ideias e a inclusão possam impulsionar a criatividade. Estou sempre aberta a aprender e contribuir, buscando fazer a diferença por meio da tecnologia.
+                    Se você curte inovação, colaboração e um toque de humor, bora trocar uma ideia! Nunca se sabe o que pode surgir de uma boa conversa. :D
                 </p>
-                <p>
-                    Se você estiver em busca de alguém com determinação, visão de futuro e paixão por inovação, adoraria conversar!
-                </p>
+                
             </section>
-            <section>
+
+            <section class="card">
                 <h3>Formação</h3>
                 <p>
                     Tecnólogo em Inteligência Artificial Aplicada
@@ -52,32 +57,11 @@
                     Universidade PUCPR - Pontifícia Universidade Católica do Paraná, 2024.
                 </p>
                 <p>
-                    Atualmente, estou no primeiro período do curso de Inteligência Artificial Aplicada, iniciado em agosto de 2024. Estou construindo uma base sólida em áreas como Fundamentos de Programação e Programação Orientada a Objetos, essenciais para o desenvolvimento de soluções tecnológicas inteligentes.
+                    Atualmente estou no segundo período do curso.
                 </p>
-                <p>
-                    Além disso, estou explorando temas como Ética e Introdução à Filosofia, que me ajudam a compreender os impactos éticos e sociais da IA.
-                </p>
-                <p>
-                    O curso também me proporciona habilidades em Comunicação Aplicada e Empreendedorismo, preparando-me para inovar e colaborar em ambientes profissionais. Esses aprendizados iniciais estão moldando minha jornada na área de IA, com foco no impacto positivo que a tecnologia pode trazer para diversos setores.
-                </p>
+                
             </section>
-            <section>
-                <h3>Certificações em Andamento / Interesse:</h3>
-                <ul class="certifications">
-                    <li>IBM Data Science Professional Certificate (Coursera) - Certificação focada em ciência de dados, incluindo ferramentas como Python e SQL.</li>
-                    <li>Certificação CPA-10 (Anbima) - Foco no mercado financeiro.</li>
-                    <li>Data Science e Machine Learning com Python (Udemy/Coursera) - Curso prático de Python para análise de dados.</li>
-                    <li>Microsoft Certified: Azure AI Fundamentals - Introdução à inteligência artificial aplicada à plataforma Azure.</li>
-                    <p>
-                        Futuras Certificações de Interesse:
-                    </p>
-                    <ul class="future-certifications">
-                        <li>Microsoft Certified: Azure AI Engineer Associate</li>
-                        <li>AWS Certified Solutions Architect – Associate</li>
-                        <li>Certified Information Systems Security Professional (CISSP)</li>
-                    </ul>
-                </ul>
-            </section>
+            
         </main>
         
         <footer>
@@ -91,5 +75,25 @@
             </a>
         </footer>
     </div>
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = document.querySelector('.switch .icon');
+
+  // Define o tema padrão como claro no carregamento
+  document.documentElement.setAttribute('data-theme', 'light');
+  icon.textContent = '🌞'; // ícone inicial sol
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      icon.textContent = '🌙'; // Modo escuro - lua
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      icon.textContent = '🌞'; // Modo claro - sol
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  });
+</script>
+
+
 </body>
 </html>
