@@ -129,22 +129,6 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.certifications, .future-certifications {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 0; 
-}
-
-.future-certifications {
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-.certifications li, .future-certifications li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
