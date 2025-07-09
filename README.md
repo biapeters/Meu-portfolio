@@ -5,7 +5,6 @@ Este é um site pessoal desenvolvido por mim, Bianca, com o objetivo de apresent
 
 - HTML
 - CSS
-- JavaScript
 
 ## Como acessar
 
